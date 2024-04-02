@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def clean_data(file_path):
     # Load the CSV file
     df = pd.read_csv(file_path)
@@ -20,6 +21,7 @@ def clean_data(file_path):
     # Save cleaned data to a new CSV file
     df.to_csv('cleaned_data.csv', index=False)
     print("Data cleaned and saved to 'cleaned_data.csv'.")
+
 
 # Replace 'your_file.csv' with the path to your CSV file
 clean_data('your_file.csv')
